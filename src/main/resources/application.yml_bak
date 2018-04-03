@@ -1,0 +1,12 @@
+server:
+  port: 8081
+  context-path: /test
+  
+  com:
+  didispace:
+    blog:
+      bignumber: ${random.long}
+      number: ${random.int}
+      test1: ${random.int(10)}
+      test2: ${random.int[10,20]}
+      value: ${random.value}
